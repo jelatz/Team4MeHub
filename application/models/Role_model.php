@@ -7,6 +7,7 @@
  * @version : 1.2
  * @since : 22 Jan 2021
  */
+#[AllowDynamicProperties]
 class Role_model extends CI_Model
 {
     /**

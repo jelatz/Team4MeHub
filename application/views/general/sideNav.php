@@ -101,7 +101,7 @@
                         </span>
                         <span> <span><i class="fa-solid fa-chevron-left dropdown-nav-icon"></i></span></span>
                     </a>
-                    <ul class="dropdown-menu settings-menu w-100 rounded-0 bg-secondary" aria-labelledby="settingsDropdown">
+                    <ul class="dropdown-menu settings-menu w-100 rounded-0 bg-secondary p-0" aria-labelledby="settingsDropdown">
                         <li><a class="dropdown-item" href="<?php echo base_url(); ?>userListing">Users</a></li>
                         <li><a class="dropdown-item" href="<?php echo base_url(); ?>roleListing">Role</a></li>
                         <li><a class="dropdown-item" href="<?php echo base_url(); ?>levelListing">Level</a></li>

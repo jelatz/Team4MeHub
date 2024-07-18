@@ -7,6 +7,7 @@
  * @version : 1.1
  * @since : 15 November 2016
  */
+#[AllowDynamicProperties]
 class BaseController extends CI_Controller {
 	protected $role = '';
 	protected $vendorId = '';

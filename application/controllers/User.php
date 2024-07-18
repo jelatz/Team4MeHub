@@ -9,6 +9,7 @@ require APPPATH . '/libraries/BaseController.php';
  * @version : 1.1
  * @since : 15 November 2016
  */
+#[AllowDynamicProperties]
 class User extends BaseController
 {
     /**
@@ -300,8 +301,8 @@ class User extends BaseController
      */
     function profile($active = "details")
     {
-        $data["userInfo"] = $this->user_model->getUserInfoWithRole($this->vendorId);
-        $data["active"] = $active;
+        $data = (array) $this->user_model->getUserInfoWithRole($this->vendorId);
+        $data['active'] = $active;
 
         $this->global['pageTitle'] = $active == "details" ? 'Team4MeHub : My Profile' : 'Team4MeHub : Change Password';
         $this->loadViews("includes/header", $this->global, NULL, NULL);

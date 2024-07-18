@@ -8,6 +8,7 @@
  * @version : 1.1
  * @since : 15 November 2016
  */
+#[AllowDynamicProperties]
 class Login_model extends CI_Model
 {
     

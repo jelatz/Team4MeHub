@@ -9,6 +9,7 @@ require APPPATH . '/libraries/BaseController.php';
  * @version : 1.1
  * @since : 22 Jan 2021
  */
+#[AllowDynamicProperties]
 class Roles extends BaseController
 {
     /**

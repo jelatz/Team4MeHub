@@ -21,14 +21,14 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="userDropdown">
-                        <img src="http://localhost/team4mehub/assets/dist/img/avatar.png" alt="User Image" class="img-fluid rounded-circle" width="20">
+                        <img src="<?php echo base_url(); ?>/assets/images/img1.jpg" alt="User Image" class="img-fluid rounded-circle" width="25">
                         <span class="d-none d-sm-inline-block text-white">
                             <?php echo $name; ?></span>
                     </a>
                     <ul class="dropdown-menu p-0 m-0" aria-labelledby="userDropdown" id="userDropdownMenu">
                         <li class="dropdown-item p-0">
                             <div class="bg-primary p-3">
-                                <img src="http://localhost/team4mehub/assets/dist/img/avatar.png" alt="User Image" class="img-fluid rounded-circle mx-auto d-block" width="80">
+                                <img src="<?php echo base_url(); ?>/assets/images/img1.jpg" alt="User Image" class="img-fluid rounded-circle mx-auto d-block" width="80">
                                 <p class="mt-2 text-white text-center">
                                     <?php echo $name; ?>
                                     <small class="d-block"><?php echo $role_text; ?></small>

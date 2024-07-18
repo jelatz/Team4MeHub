@@ -9,6 +9,7 @@ require APPPATH . '/libraries/BaseController.php';
  * @version : 1.1
  * @since : 15 November 2016
  */
+#[AllowDynamicProperties]
 class User extends BaseController
 {
     /**

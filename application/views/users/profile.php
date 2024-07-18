@@ -14,17 +14,17 @@
         <div class="col-md-3">
             <div class="card border-4 border-start-0 border-end-0 border-bottom-0 shadow-sm border-warning">
                 <div class="card-body border-0 bg-light-subtle p-3 position-relative">
-                    <img src="http://localhost/team4mehub/assets/dist/img/avatar.png" alt="User Image" class="img-fluid rounded-circle mx-auto d-block border border-3 p-1" width="100">
+                    <img src="<?php echo base_url(); ?>/assets/images/img1.jpg" alt="User Image" class="img-fluid rounded-circle mx-auto d-block border border-3 p-1" width="100">
                     <p class="mt-2 text-center">
                         <?php echo $name; ?>
                         <small class="d-block"><?php echo $role_text; ?></small>
                     </p>
                     <ul class="list-group list-group-unbordered">
                         <li class="list-group-item">
-                            <b>Email</b> <a class="float-end"><?= $userInfo->email ?></a>
+                            <b>Email</b> <a href="mailto:<?= $email ?>" class="float-end"><?= $email ?></a>
                         </li>
                         <li class="list-group-item">
-                            <b>Mobile</b> <a class="float-end"><?= $userInfo->mobile ?></a>
+                            <b>Mobile</b> <a href="tel: <?= $mobile ?>" class="float-end"><?= $mobile ?></a>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@
             </ul>
             <div class="tab-content" id="profileTabContent">
                 <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="nav-basicInfo-tab">
-                    <?php include APPPATH . '/views/components/Basic_info.php'; ?>
+                    <?php $this->load->view('components/Basic_info.php', ['msg' => 'hi']); ?>
                 </div>
                 <div class="tab-pane fade" id="training" role="tabpanel" aria-labelledby="nav-training-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, natus sed soluta necessitatibus tempore aspernatur? Praesentium, odit explicabo distinctio dolore adipisci officia iure, ut magnam optio aliquam at similique veritatis.</div>
                 <div class="tab-pane fade" ids="changePass" role="tabpanel" aria-labelledby="nav-changePass-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium minima repellat incidunt facilis obcaecati blanditiis corrupti ad officia doloribus ullam sapiente ipsum, nemo a, excepturi voluptatem voluptatibus velit eum dignissimos ut, nam tempora? Reiciendis illo itaque veritatis eligendi fuga, mollitia ratione totam veniam esse in.</div>
