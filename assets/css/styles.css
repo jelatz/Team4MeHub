@@ -10,7 +10,7 @@
 .sidebar-nav .active{color: #fff; background-color: #1f2122 !important;}
 .sidebar-nav small{font-size: 0.7em}
 
-.nav-link:hover{color: #fff !important;}
+/* .nav-link:hover{color: #fff !important;} */
 
 .nav a:hover{background-color: #242525; color: #fff;}
 
@@ -52,3 +52,6 @@ a > i{margin: 0rem .8rem;}
 .card-footer:hover .backdrop{background-color: #00000046;}
 
 .card-footer a {position: relative;z-index: 2; color: #fff}
+
+/* EDIT PROFILE */
+#profileNavTab > li > .active:hover{color: #000;}
