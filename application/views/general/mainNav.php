@@ -34,12 +34,14 @@
                                     <small class="d-block"><?php echo $role_text; ?></small>
                                 </p>
                             </div>
-                            <div class="row justify-content-between p-2">
-                                <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>profile" class="btn btn-warning w-100"><i class="fa fa-user-circle"></i> Profile</a>
-                                </div>
-                                <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>logout" class="btn btn-secondary w-100"><i class="fa fa-sign-out"></i> Sign out</a>
+                            <div class="container-fluid">
+                                <div class="row justify-content-between p-2">
+                                    <div class="col-6">
+                                        <a href="<?php echo base_url(); ?>profile" class="btn btn-warning w-100"><i class="fa fa-user-circle"></i> Profile</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="<?php echo base_url(); ?>logout" class="btn btn-secondary w-100"><i class="fa fa-sign-out"></i> Sign out</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
