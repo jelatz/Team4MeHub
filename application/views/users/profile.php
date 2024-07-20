@@ -38,8 +38,47 @@
                 <li class="<?= ($active == "changepass") ? "active" : "" ?>"> <a class="nav-link" id="changePass" data-bs-toggle="tab" href="#changePass" role="tab" aria-controls="changePass" aria-selected="true">Change Password</a></li>
             </ul>
             <div class="tab-content" id="profileTabContent">
-                <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="nav-basicInfo-tab">
-                    <?php $this->load->view('components/Basic_info.php', ['msg' => 'hi']); ?>
+                <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfoTab">
+                    <div class="container-fluid px-2 py-4">
+                        <div class="row">
+                            <div class="col-auto col-lg-2">
+                                <ul class="nav nav-pills flex-column gap-1" id="basic-info-pills" role="tablist">
+                                    <li class="nav-item">
+                                        <a href="#" aria-expanded="true" class="nav-link active" id="tab-company" data-bs-toggle="pill" href="#pill-company">Company Details</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href=aria-expanded="true" class="nav-link" id="tab-personal" data-bs-toggle="pill" href="#pill-personal">Personal Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href=aria-expanded="true" class="nav-link" id="tab-family" data-bs-toggle="pill" href="#pill-family">Family Background</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href=aria-expanded="true" class="nav-link" id="tab-education" data-bs-toggle="pill" href="#pill-education">Educational Background</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href=aria-expanded="true" class="nav-link" id="tab-workHistory" data-bs-toggle="pill" href="#pill-workHistory">Working History</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href=aria-expanded="true" class="nav-link" id="tab-training" data-bs-toggle="pill" href="#pill-training">Trainings/Seminers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href=aria-expanded="true" class="nav-link" id="tab-charRef" data-bs-toggle="pill" href="#pill-charRef">Character Referrence</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-auto col-lg-10">
+                                <div class="nav-content" id="basicInfoTabContent">
+                                    <?php $this->load->view('components/Profile/companyProfile.php') ?>
+                                    <?php $this->load->view('components/Profile/personalInfo.php') ?>
+                                    <?php $this->load->view('components/Profile/famBackground.php') ?>
+                                    <?php $this->load->view('components/Profile/educBackground.php') ?>
+                                    <?php $this->load->view('components/Profile/workHistory.php') ?>
+                                    <?php $this->load->view('components/Profile/training.php') ?>
+                                    <?php $this->load->view('components/Profile/charReferrence.php') ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="training" role="tabpanel" aria-labelledby="nav-training-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, natus sed soluta necessitatibus tempore aspernatur? Praesentium, odit explicabo distinctio dolore adipisci officia iure, ut magnam optio aliquam at similique veritatis.</div>
                 <div class="tab-pane fade" ids="changePass" role="tabpanel" aria-labelledby="nav-changePass-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium minima repellat incidunt facilis obcaecati blanditiis corrupti ad officia doloribus ullam sapiente ipsum, nemo a, excepturi voluptatem voluptatibus velit eum dignissimos ut, nam tempora? Reiciendis illo itaque veritatis eligendi fuga, mollitia ratione totam veniam esse in.</div>

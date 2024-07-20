@@ -3,7 +3,6 @@
 
 <aside class="sidebar-nav min-vh-100 position-fixed">
     <div class="nav w-100">
-
         <ul class="navbar-nav w-100">
             <li class="nav-item p-2">
                 <small class="text-uppercase text-secondary">main navigation</small>

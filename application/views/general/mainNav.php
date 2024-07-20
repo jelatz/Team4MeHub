@@ -1,5 +1,5 @@
 <nav class="navbar bg-primary py-0 fixed-top ">
-    <div class="container-fluid p-0 m-0">
+    <div class="container-fluid px-0">
         <div class="d-flex">
             <a href="<?php echo base_url(); ?>" class="navbar-brand text-white logo text-center m-0"><strong>Team4Me</strong>Hub</a>
             <a href="#" class="nav-link active hamburger pt-0 d-flex justify-content-center align-items-center" id="hamburger">
