@@ -2,16 +2,16 @@
 
 ?>
 
-<div class="section">
-    <div class="row p-3">
+<div class="section ">
+    <div class="row p-3 justify-content-center align-items-center">
         <div class="col-12 d-flex gap-1">
             <i class="fa-solid fa-circle-user" aria-hidden=true></i>
             <h6>My Profile</h6>
             <small class="text-light-emphasis">View or modify information</small>
         </div>
     </div>
-    <div class="row px-3">
-        <div class="col-md-2">
+    <div class="row px-3 gap-y-3 gap-lg-0">
+        <div class="col-12 col-xl-2">
             <div class="card border-4 border-start-0 border-end-0 border-bottom-0 shadow-sm border-warning">
                 <div class="card-body border-0 bg-light-subtle p-3 position-relative">
                     <img src="<?php echo base_url(); ?>/assets/images/img1.jpg" alt="User Image" class="img-fluid rounded-circle mx-auto d-block border border-3 p-1" width="100">
@@ -21,18 +21,18 @@
                     </p>
                     <ul class="list-group list-group-unbordered">
                         <li class="list-group-item">
-                            <b>Email</b> <a href="mailto:<?= $email ?>" class="float-end"><?= $email ?></a>
+                            <b>Email</b> <a href="mailto:<?= $email ?>" class="d-block"><?= $email ?></a>
                         </li>
                         <li class="list-group-item">
-                            <b>Mobile</b> <a href="tel: <?= $mobile ?>" class="float-end"><?= $mobile ?></a>
+                            <b>Mobile</b> <a href="tel: <?= $mobile ?>" class="d-block"><?= $mobile ?></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-10 shadow-sm p-0">
-            <ul class="nav nav-tabs" id="profileNavTab" role="tablist">
+        <div class="col-12 col-xl-10 shadow-sm p-0 mt-3 mt-lg-0">
+            <ul class="nav nav-tabs justify-content-center justify-content-xl-start" id="profileNavTab" role="tablist">
                 <li class="<?= ($active == "details") ? "active" : "" ?>"><a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#basicInfo" role="tab" aria-controls="nav-home" aria-selected="true">Basic Info</a></li>
                 <li class="<?= ($active == "training") ? "active" : "" ?>"> <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#training" role="tab" aria-controls="nav-profile" aria-selected="false">Training/Skills/Awards</a></li>
                 <li class="<?= ($active == "changepass") ? "active" : "" ?>"> <a class="nav-link" id="changePass" data-bs-toggle="tab" href="#changePass" role="tab" aria-controls="changePass" aria-selected="true">Change Password</a></li>
@@ -41,8 +41,8 @@
                 <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfoTab">
                     <div class="container-fluid px-2 py-4">
                         <div class="row">
-                            <div class="col-auto col-lg-2">
-                                <ul class="nav nav-pills flex-column gap-1" id="basic-info-pills" role="tablist">
+                            <div class="col-12 col-xl-2">
+                                <ul class="nav nav-pills flex-row flex-xl-column gap-1 mb-3 mb-xl-0" id="basic-info-pills" role="tablist">
                                     <li class="nav-item">
                                         <a aria-expanded="true" class="nav-link active" id="tab-company" data-bs-toggle="pill" href="#pill-company">Company Details</a>
                                     </li>
@@ -66,7 +66,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-auto col-lg-10">
+                            <div class="col-auto col-xl-10">
                                 <form action="">
                                     <div class="tab-content" id="basicInfoTabContent">
                                         <?php $this->load->view('components/Profile/companyProfile.php') ?>

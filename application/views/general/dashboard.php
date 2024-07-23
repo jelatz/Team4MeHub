@@ -7,8 +7,8 @@
                 <small>Dashboard</small>
             </div>
         </div>
-        <div class="row justify-content-evenly p-2">
-            <div class="col-md-3">
+        <div class="row justify-content-evenly p-2 gap-3 gap-lg-0">
+            <div class="col-12 col-md-5 col-lg-3">
                 <div class="card border-0">
                     <div class="card-body border-0 bg-info p-3 position-relative">
                         <h3 class="text-white">15</h3>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-md-5 col-lg-3">
                 <div class="card border-0">
                     <div class="card-body border-0 bg-success p-3 position-relative">
                         <h3 class="text-white">15</h3>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-md-5 col-lg-3">
                 <div class="card border-0">
                     <div class="card-body border-0 bg-warning p-3 position-relative">
                         <h3 class="text-white">14</h3>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-md-5 col-lg-3">
                 <div class="card border-0">
                     <div class="card-body border-0 bg-danger p-3 position-relative">
                         <h3 class="text-white">15</h3>
